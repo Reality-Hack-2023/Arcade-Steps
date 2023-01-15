@@ -1,0 +1,18 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="BluetoothUIManager">
+			<method name="onConnectButton"/>
+			<method name="onDisconnectButton"/>
+			<method name="onDropdownValueChanged"/>
+		</type>
+		<type fullname="ExampleCommunicator">
+			<method name="onConnected"/>
+			<method name="onMessageRecieved"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+</linker>
