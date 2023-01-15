@@ -17,7 +17,7 @@
 BluetoothSerial BTSerial;
 
 // bluetooth setup
-#define NAME "CHANGE_THIS"
+#define NAME "emtest11"
 int loop_count = 0;
 
 // FSM setup
@@ -284,6 +284,7 @@ void loop() {
       if (climbing) {
         current_state = CLIMBING_STATE; // detected change in altitude
       }
+      ledcWrite(MOTOR_CHANNEL, 0);
       break;
     }
 
